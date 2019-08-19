@@ -1,0 +1,15 @@
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<p>
+    <div class="collapse container-object" id="collapse4">
+        {% csrf_token %}
+        <div class="md-6 mb-0">
+            <p class="text-gym-app-large"></p>
+            {{ chest_fly_f|crispy }}
+        </div>
+    </div>
+</p>
+
+{% endblock %}

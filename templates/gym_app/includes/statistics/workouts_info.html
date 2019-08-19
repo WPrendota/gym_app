@@ -1,0 +1,20 @@
+{% block content %}
+
+
+<div class="collapse para-centered" id="collapse1">
+            {% csrf_token %}
+            <div class="md-6 mb-0">
+                <p class="text-gym-app-large"></p>
+                <p class="p-text ">General Informations:</p>
+                    <p class="p-text ">
+                        Workouts count:
+                       <b> {{ number_of_workouts }} </b>
+                    </p>
+
+                    <p class="p-text ">
+                        First Workout:
+                       <b> {{ first_workout_date }} </b>
+                    </p>
+            </div>
+
+{% endblock %}
